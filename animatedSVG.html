@@ -31,11 +31,18 @@
 	.logo { width:400px;
 			-moz-animation-name:moving;
 			-moz-animation-duration:3s;
-			-moz-animation-timing-function:ease-in-out;}
+			-moz-animation-timing-function:ease-in-out;
+			-moz-animation-iteration-count:5;}
 
+	@-moz-keyframes moving1 {
+		from { -moz-transform:translate(0px);}
+		to { -moz-transform:translate(500px);}
+	}
 	@-moz-keyframes moving {
-		from{ -moz-transform:translate(0px);}
-		to{ -moz-transform:translate(500px);}
+		0% { -moz-transform:translate(0px);}
+		50% { -moz-transform:translate(1000px);}
+		100% { -moz-transform:translate(0px);
+		}
 	}
 
 </style>
